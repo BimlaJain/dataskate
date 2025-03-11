@@ -15,7 +15,7 @@ const InputField: React.FC<InputFieldProps> = ({ type, name, value, placeholder,
             onChange={onChange}
             placeholder={placeholder}
             required
-            className="w-full p-2 mb-3 border border-black placeholder:text-black text-black rounded"
+            className="w-full p-2 my-3 border border-black placeholder:text-black text-black rounded"
         />
     );
 };
