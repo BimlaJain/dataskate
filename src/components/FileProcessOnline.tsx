@@ -65,11 +65,11 @@ const FileProcessOnline = () => {
                 <h2 className="text-[32px] font-semibold text-center mb-[34px] mt-9 ff-syne">
                     Read & process your files online
                 </h2>
-                <div className="bg-white p-4 rounded-xl shadow-md">
+                <div className="bg-white p-4 rounded-xl shadow-md w-[786px]">
                     {!uploading ? (
                         <div
                             {...getRootProps()}
-                            className="w-[635px] mx-auto h-[326px] p-4 border-dashed border border-red-400 rounded-lg flex flex-col items-center justify-center bg-white cursor-pointer"
+                            className=" h-[326px] p-4 border-dashed border border-red-400 rounded-lg flex flex-col items-center justify-center bg-white cursor-pointer"
                         >
                             <input {...getInputProps()} />
                             <FiUpload className="text-3xl text-gray-500 mb-2" />
@@ -82,7 +82,7 @@ const FileProcessOnline = () => {
                             </button>
                         </div>
                     ) : (
-                        <div className="w-[635px] mx-auto h-[326px] border p-4 border-dashed border-red-400 rounded-lg flex flex-col items-center justify-center bg-white">
+                        <div className=" h-[326px] border p-4 border-dashed border-red-400 rounded-lg flex flex-col items-center justify-center bg-white">
                             <div className="flex flex-col gap-3 w-full">
                                 {files.map((file, index) => (
                                     <div key={index} className="flex justify-between gap-3 w-full p-2">

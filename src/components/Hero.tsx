@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import CommonInput from "@/components/common/CommonInput"; // Import the reusable input field
+import CommonInput from "@/components/common/CommonInput"; 
 
 const Hero = () => {
   const [formData, setFormData] = useState({ firstName: "", lastName: "", email: "" });
