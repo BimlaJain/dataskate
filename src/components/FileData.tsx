@@ -36,9 +36,14 @@ const Details = () => {
         <div className='bg-[#F6F6F6]'>
             <Header />
             <div className="container max-w-[1180px] mx-auto px-4">
-                <h2 className="text-2xl font-semibold pb-[34px] lg:text-left text-center">
-                    {fileName ? fileName : "No file uploaded"}
-                </h2>
+                <div className="flex justify-between">
+                    <h2 className="text-2xl font-semibold pb-[34px] lg:text-left text-center">
+                        {fileName ? fileName : "No file uploaded"}
+                    </h2>
+                    <button className='px-[22px] uppercase py-4 border h-[49px] flex justify-center items-center hover:bg-red-200 transition-all duration-500 ease-linear border-gray-600 rounded-2xl text-black text-sm ff-syne font-medium'>
+                        Upload more files
+                    </button>
+                </div>
                 <div className="flex max-lg:flex-wrap gap-4 lg:justify-between justify-center">
                     {DATA.map((item, index) => (
                         <div key={index} className={`bg-white py-[19px] px-4 flex items-center gap-4 ${item.maxWidth} rounded-[8px] max-lg:mb-4`}>
