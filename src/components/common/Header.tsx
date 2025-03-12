@@ -32,7 +32,7 @@ const Header = () => {
           <div className="flex items-center gap-2 max-sm:mt-5">
             <Image
               src={userImage || "/assets/images/png/jhon.png"}
-              alt="User Avatar"
+              alt="User "
               width={40}
               height={40}
               className="rounded-full"
