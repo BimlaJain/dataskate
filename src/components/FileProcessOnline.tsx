@@ -65,7 +65,6 @@ const FileProcessOnline = () => {
 
     });
 
-
     return (
         <div className="relative min-h-screen">
             <Header />
