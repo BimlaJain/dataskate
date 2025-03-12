@@ -19,8 +19,6 @@ const Details = () => {
         }
     }, []);
 
-    const metricCount = searchParams.get("metric") || "";
-
     const handleMetricClick = (count: number, title: string) => {
         const params = new URLSearchParams(searchParams.toString());
 

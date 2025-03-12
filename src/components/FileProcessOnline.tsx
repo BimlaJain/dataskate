@@ -43,6 +43,13 @@ const FileProcessOnline = () => {
             const fileNames = acceptedFiles.map(file => file.name);
             localStorage.setItem("uploadedFiles", JSON.stringify(fileNames));
             localStorage.setItem("uploadedFileName", fileNames[0]);
+
+            const imageFile = acceptedFiles.find(file => file.type.startsWith("image/"));
+            if (imageFile) {
+                const imageUrl = URL.createObjectURL(imageFile);
+                localStorage.setItem("uploadedUserImage", imageUrl);
+            }
+
             const interval = setInterval(() => {
                 setProgress((oldProgress) => {
                     if (oldProgress >= 100) {
@@ -55,6 +62,7 @@ const FileProcessOnline = () => {
                 });
             }, 500);
         },
+
     });
 
 
